@@ -25,27 +25,27 @@ function draw() {
   
   fill(255);
   noStroke();
-  rect(40,520,300,10);
+  rect(a*2,b*13,a*15,b/4);
   
   fill(125);
   rect(50,90,250,430);
   
-  triangle(300,520,340,520,300,90);
+  triangle(a*15,b*13,a*17,b*13,a*15,2.25*b);
   
   fill(255);
-  ellipse(200,300,150,250);
+  ellipse(a*10,b*7.5,a*7.5,6.25*b);
   
   fill(190,190,0);
-  ellipse(200,300,120,200);
+  ellipse(a*10,7.5*b,120,200);
   
   fill(0);
-  ellipse(200,300,60,200);
+  ellipse(a*10,7.5*b,60,200);
   
   fill(190);
-  ellipse(200,300,24,110);
+  ellipse(a*10,7.5*b,24,110);
   
   fill(255,0,0);
-  triangle(200,290,190,310,210,310);
+  triangle(a*10,290,190,310,210,310);
   
   stroke(255,0,255);
   line(300,90,360,90);

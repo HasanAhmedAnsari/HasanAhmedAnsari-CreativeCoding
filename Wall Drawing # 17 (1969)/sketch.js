@@ -3,7 +3,7 @@ var a = {
     a:10,
     b:150,
     c:10,
-    d:250}
+    d:250};
     
 //horizontal line
 var b = {
@@ -11,7 +11,7 @@ var b = {
     f:0,
     g:200,
     h:0
-}
+};
 
 //diagonal line 1
 var c = {
@@ -19,7 +19,7 @@ var c = {
     j:0,
     k:210,
     l:2
-}
+};
 
 //diagonal line 2
 var e = {
@@ -27,7 +27,7 @@ var e = {
     r:2,
     s:210,
     t:92,
-}
+};
 
 //diagonal line 3
 var d = {
@@ -35,7 +35,7 @@ var d = {
     n:400,
     o:310,
     p:398,
-}
+};
 
 function setup() {
   createCanvas(410,400);
@@ -71,22 +71,17 @@ function draw() {
   
 //diagonal line 1
   
-  if(c.i<=300){
-   line(c.i,c.j,c.k,c.l); 
-  }
-    
+  while(c.i<=300 || e.q<=300){
+    line(c.i,c.j,c.k,c.l);
+    line(e.q,e.r,e.s,e.t);
+      
     c.i+=4;
     c.l+=4;
-    
-//diagonal line 2
-  
-  if(e.q<=300){
-   line(e.q,e.r,e.s,e.t); 
-  }
-  
-  e.r+=4;
-  e.t+=4;
-  
+      
+    e.r+=4;
+    e.t+=4;
+    }
+        
 //diagonal line 3
   line(d.m,d.n,d.o,d.p);
     

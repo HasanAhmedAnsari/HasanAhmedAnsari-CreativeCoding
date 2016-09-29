@@ -75,8 +75,8 @@ function draw() {
    line(c.i,c.j,c.k,c.l); 
   }
     
-    c.i+=2;
-    c.l+=2;
+    c.i+=4;
+    c.l+=4;
     
 //diagonal line 2
   
@@ -84,12 +84,12 @@ function draw() {
    line(e.q,e.r,e.s,e.t); 
   }
   
-  e.r+=2;
-  e.t+=2;
+  e.r+=4;
+  e.t+=4;
   
 //diagonal line 3
   line(d.m,d.n,d.o,d.p);
     
-  d.m+=2;
-  d.p-=2;
+  d.m+=4;
+  d.p-=4;
 }

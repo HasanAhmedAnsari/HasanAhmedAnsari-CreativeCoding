@@ -71,16 +71,21 @@ function draw() {
   
 //diagonal line 1
   
-  while(c.i<=300 || e.q<=300){
-    line(c.i,c.j,c.k,c.l);
+ if(c.i<=300){
+   line(c.i,c.j,c.k,c.l);
+        
+   c.i+=4;
+   c.l+=4;
+  }
+
+//diagonal line 2     
+  
+  if(e.q<=300){
     line(e.q,e.r,e.s,e.t);
-      
-    c.i+=4;
-    c.l+=4;
-      
+    
     e.r+=4;
     e.t+=4;
-    }
+  }
         
 //diagonal line 3
   line(d.m,d.n,d.o,d.p);

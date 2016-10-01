@@ -24,9 +24,9 @@ var c = {
 //diagonal line 2
 var e = {
     q:300,
-    r:2,
+    r:4,
     s:210,
-    t:92,
+    t:94,
 };
 
 //diagonal line 3

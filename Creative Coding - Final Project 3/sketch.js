@@ -1,30 +1,30 @@
-//We don't get to chose what is true. We only get to choose what we do about it.
-//Inspired by Kami Garcia's Beautiful Darkness
+var circleRadii= [];
+var slider;
+var x,y;
 
-var lexicon;
 function setup() {
-  createCanvas(400, 400);
-  lexicon = new RiLexicon();
-  background(50);
-  fill(random(255), random(200), random(145));
-  noStroke();
-  textSize(32);
-  textAlign(CENTER, CENTER);
-  text("Choices by Hasan A Ansari", width/2, height/2);
+  createCanvas(windowWidth,windowHeight);
+  slider = createSlider(5,100,100);
+  slider.position(width/2,height-80);
+  frameRate(30);
 }
+
 function draw() {
-}
-function mousePressed() {
-  background(255);
-  textAlign(CENTER, CENTER);
-  
-  var output = "We don't get to choose what is " +
-    lexicon.randomWord("wrb") + 
-    ". We only get to choose what we " +
-    lexicon.randomWord("vb") + " " +
-    " about " + " " +
-    lexicon.randomWord("nn") +
-    ".";
-  
-  text(output, 10, 10, width-20, height-20);
+  background(0);
+    for(var i = 0;i<10;i++)
+    {
+      circleRadii[i] = {
+        displaycircle: function() {
+          noStroke();
+          
+          fill(random(0,255), random(0,255), random(0,255));
+          x=(random(0, width));
+          y=(random(0, height));
+          
+          ellipse(x,y,30+slider.value(),30+slider.value());
+        }
+      }
+      circleRadii[i].displaycircle(); 
+    }
+   
 }

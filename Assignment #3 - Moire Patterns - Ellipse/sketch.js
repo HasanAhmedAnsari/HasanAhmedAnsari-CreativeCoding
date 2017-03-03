@@ -1,3 +1,6 @@
+/**
+**  Kevin's notes:  Very nice!  Something to think about: How might you refactor this code using functions?  
+*/
 var ellipseWidthMultplier = 10;
 var ellipseHeightMultiplier = 5;
 var theta = 45.0;
@@ -29,7 +32,6 @@ function draw() {
   
 //rotating rectangle
   translate(width/2,height/2);
-  
   rotate(theta);
   for(var i=0; i<=40; i++){
     ellipse(0,0, i*ellipseWidthMultplier,i*ellipseHeightMultiplier);

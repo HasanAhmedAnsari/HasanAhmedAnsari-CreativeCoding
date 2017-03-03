@@ -1,3 +1,10 @@
+/**
+** Kevin's comments:  This is great!  If you have time, I would love to see you turn this code into dynamic proportions
+In other words, instead of calculating hard coded numbers, think about the geometries' dimensions as they relate to the canvas size.
+For example, what is the relationship between each nested ellipse?
+Your global variables should be more descriptively named, and make it so that a user can easily read through the code,
+and mentally visualize what it may look like on the page.
+*/
 var a = 20;
 var b = 40;
 

@@ -3,15 +3,20 @@ var posY;
 
 function setup() {
   createCanvas(1000,400);
+  //you can assign these values up on lines 1 and 2 instead of in the setup function
   posX=100;
   posY=200;
 }
 
 function draw() {
  background(0);
+  //you pass in params to the flash function but aren't using them in the function definition
+  //please change your function definition below to reflect the arguments:  function flash(positionX,positionY)
  flash(posX,posY); 
 }
 
+//think about how you might parameterize this character a little more.  How about
+//color as a parameter?
 function flash(){
   
   noStroke();
@@ -32,6 +37,9 @@ function flash(){
   fill('yellow')
   ellipse(posX+10,posY+30,15,15);
   
+  //think about how you might animate the legs, so that the character appears to be running across the screen
+  //for your final project.  In order to do that you'll need to use push() & pop() and isolate your transformations so you can
+  //rotate the legs around a pivot point.
   //legs
   fill('red');
   rect(posX+20,posY+70,40,20);
